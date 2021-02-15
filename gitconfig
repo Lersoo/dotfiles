@@ -10,8 +10,9 @@
   remote = yellow
 
 [core]
-  pager = less -FRSX
-	editor = subl -n -w  >/dev/null 2>&1
+	pager = diff-so-fancy | less --tabs=4 -RFX
+	editor = vim
+	excludesfile = .TODO
 
 [alias]
   co = checkout
@@ -47,5 +48,7 @@
 [branch "master"]
   mergeoptions = --no-edit
 [user]
-	email = thomas.soler.06@gmail.com
-	name = Thomas Soler
+	email = soler.thomas.06@gmail.com
+	name = Thomas
+[credential "https://github.com"]
+	helper = !gh auth git-credential
