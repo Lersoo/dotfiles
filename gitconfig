@@ -12,7 +12,7 @@
 [core]
 	pager = diff-so-fancy | less --tabs=4 -RFX
 	editor = vim
-	excludesfile = .TODO
+	excludesfile = ~/.gitignore
 
 [alias]
   co = checkout
