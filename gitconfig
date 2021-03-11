@@ -47,8 +47,16 @@
 
 [branch "master"]
   mergeoptions = --no-edit
+
 [user]
 	email = soler.thomas.06@gmail.com
 	name = Thomas
+
 [credential "https://github.com"]
 	helper = !gh auth git-credential
+
+[diff]
+    tool = nvimdiff
+
+[difftool "nvimdiff"]
+    cmd = "nvim -d \"$LOCAL\" \"$REMOTE\""
