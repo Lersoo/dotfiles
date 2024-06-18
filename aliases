@@ -1,8 +1,12 @@
+# Git
+
 alias gaca="git add . && git commit --amend"
+alias gcane="git commit --amend --no-edit"
+alias gacane="git add . && git commit --amend --no-edit"
 alias gacapf="git add . && git commit --amend && ggpush -f"
+alias grbim="git rebase --interactive $(git_main_branch)"
+alias garbc="git add . && git rebase --continue"
+alias gcfd="git clean -fd"
 
-alias todo="nvim ~/todo.taskpaper"
-alias deezer="google-chrome https://www.deezer.com/"
-alias whatsapp="google-chrome https://web.whatsapp.com/"
-
-alias :q=exit
+alias nv="nvim"
+alias ls="eza -l --group-directories-first --color=auto --icons --no-permissions --no-user"
